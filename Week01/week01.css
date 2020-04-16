@@ -1,0 +1,209 @@
+ul li{
+  list-style-type:none;
+  }
+.wrap{
+  margin: 0 auto;
+  width: 1200px;
+}
+.name{
+  font-style: Regular Andale Mono;
+  font-size: 80px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 48px;
+}
+.logo{
+  margin-bottom: 55px;
+}
+
+.profile h2{
+  font-size: 32px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 14px;
+}
+.profile h2 span{
+  font-size: 24px;
+  margin-left: 16px;
+  color: #A00404;
+}
+.profile p{
+  font-size: 24px;
+}
+.blue::before{
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  top:5%;  /*不確定怎麼調整的 沒找到規律*/
+  left: -30px; /*不知道怎麼算比較快*/
+  background: #96A9C4;
+}
+.introduce-1{
+  position: relative;
+  margin-bottom: 24px;
+  margin-left: 48px;
+}
+.introduce-2{
+  margin-bottom: 79px;
+  margin-left: 48px;
+}
+.education h2{
+  padding-bottom: 14px;
+}
+.education-list{
+  padding-left: 25px;
+}
+.education-list li{
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 32px;
+}
+/*那條線*/
+.education-list li::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  bottom:-15px;  /*亂加但成功*/
+  background: #96A9C4;
+  
+}
+.education-list li::after{
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  bottom: 17px;  /*亂加但成功*/
+  width: 1px;
+  height: 100%;
+  background: #96A9C4;
+}
+/*把多出來的線去除*/
+.education-list li:first-child::after{
+  height: 0;
+}
+.education-list li:last-child::before{
+  height: 0;
+}
+/*圓圈*/
+.education-list li p::before{
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  top:30%;
+  left: -7px;
+  background: #96A9C4;
+}
+.education h2{
+  font-size: 32px;
+  border-bottom: 1px solid #000;
+}
+
+.education h2 span{
+  font-size: 24px;
+  margin-left: 16px;
+  color: #A00404;
+}
+.education p{
+  font-style: 蘋方-繁 ;
+  font-size: 24px;
+  line-height: 1.5; /*看別人的*/
+}
+.education p span{
+  border-left: 1px solid #000;
+  margin-left: 3px;
+  padding-left: 4px;
+}
+.skill{
+  padding: 24px 102px 40px 102px;
+  background: #415165;
+  color: #fff;
+  position: relative;
+  height: 494px;
+  width: 1200px;
+}
+.skill::after{
+  content: '';
+  display: block;
+  height: 360px;
+  width: 1920px;
+  position: absolute;
+  background-color: #96a9c4;
+  left:-360px;
+  top:20%; /*抓大概而已*/
+  z-index: -5;
+}
+.skill-title{
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+.skill-title span{
+  margin-left: 16px;
+}
+.skill hr{
+  width: 996px;
+  color: #fff;
+}
+.skill-list{
+  text-align: center;
+  font-size: 24px;
+  border-left: 1px solid #fff;
+ 
+}
+.skill-items{
+  margin-bottom: 16px;
+}
+.experience h2{
+  font-size: 32px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 14px;
+}
+
+.experience h2 span{
+  font-size: 24px;
+  margin-left: 16px;
+  color: #A00404;
+}
+
+.title{
+  margin-bottom: 72px;
+  border-left: 1px solid #96A9C4;
+  margin-left: 24px;
+  padding-left: 24px;
+}
+.title2{
+  height: 154px;
+  width: 642px;
+}
+.footer{
+  height: 401px;
+  background-color: #415165;
+  text-align: center;
+  color: #ffffff;
+  padding: 24px 0 0 0 ;
+}
+
+.contact h2{
+  font-size: 32px;
+  font-style:蘋方-繁;
+}
+.contact span{
+  font-size: 24px;
+  font-style:Roboto;
+  margin-left: 16px;
+}
+.contact hr{
+  background: #ffffff;
+  height: 1px;
+  margin-bottom: 32px;
+  width: 966px;
+}
+.footer p{
+  font-size:24px;
+  font-style: light;
+  margin-bottom: 16px;
+}
